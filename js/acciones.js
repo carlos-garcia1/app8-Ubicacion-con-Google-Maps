@@ -14,7 +14,7 @@ function onDeviceReady(){
 
 function getPosition(){
 var options={
-	enableHighAcurracy :true,
+	enableHighAccuracy :true,
 	maximumAge:3600000	
 }
 
