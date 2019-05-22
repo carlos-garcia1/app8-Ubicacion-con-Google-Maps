@@ -15,7 +15,7 @@
 <script type="text/javascript">
 var x=document.getElementById("demo");
 function cargarmap(){
-	navigator.geolocation.getCurrentPosition(showPosition,showError);
+	navigator.geolocation.getCurrentPosition (showPosition,showError);
 	function showPosition(position)
 	{
 		lat=position.coords.latitude;
@@ -25,7 +25,7 @@ function cargarmap(){
 		mapholder.style.height ='500px';
 		mapholder.style.width ='750px';
 		var myOptions={
-			center:lation,zoom:17,
+			center:latlon,zoom:17,
 			mapTypeid:google.maps.MapTypeid.ROADMAP,
 			MapTypeControl:false,
 			navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
